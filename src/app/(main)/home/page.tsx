@@ -21,9 +21,9 @@ const Home: React.FC = () => {
       try {
         const [userRes, destinationsRes, favoritePlacesRes] = await Promise.all(
           [
-            axios.get("http://localhost:3000/api/user"),
-            axios.get("http://localhost:3000/api/destinations"),
-            axios.get("http://localhost:3000/api/places"),
+            axios.get("https://mobile-web-travel.vercel.app//api/user"),
+            axios.get("https://mobile-web-travel.vercel.app//api/destinations"),
+            axios.get("https://mobile-web-travel.vercel.app//api/places"),
           ]
         );
 

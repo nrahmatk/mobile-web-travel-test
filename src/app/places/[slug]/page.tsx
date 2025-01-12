@@ -11,7 +11,7 @@ interface DetailProps {
 
 const fetchData = async (slug: string): Promise<Place | null> => {
   try {
-    const response = await fetch(`http://localhost:3000/api/places/${slug}`);
+    const response = await fetch(`https://mobile-web-travel.vercel.app/api/places/${slug}`);
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
@@ -25,7 +25,7 @@ const fetchData = async (slug: string): Promise<Place | null> => {
 
 const fetchPlaces = async (): Promise<Place[] | null> => {
   try {
-    const response = await fetch(`http://localhost:3000/api/places`);
+    const response = await fetch(`https://mobile-web-travel.vercel.app/api/places`);
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
